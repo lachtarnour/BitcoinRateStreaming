@@ -8,10 +8,11 @@ import scala.util.{Failure, Success, Try}
 
 class BinanceAPI extends SourceFunction[Double] {
   override def run(ctx: SourceFunction.SourceContext[Double]): Unit = {
-    val apiKey = "5453669665msh5f8df7e2b65b9c7p10c615jsnbd4dba168490"
+    val apiKey = "adf850cd33msh466f42a04b53560p1832fcjsn463f5a2779450"
     val symbol = "ETHBTC"
     val url = s"https://binance43.p.rapidapi.com/avgPrice?symbol=$symbol"
 
+       
     while (true) {
       Try {
         val connection = new URL(url).openConnection.asInstanceOf[HttpURLConnection]
