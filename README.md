@@ -25,3 +25,9 @@ A sliding window has two parameters: window size and slide size. The window size
 In this use case, we are processing an exchange rate data stream, and we want to compute the moving average of the exchange rate over a certain period. We can use a sliding window with a fixed window size and slide size to compute the moving average.
 
 For example, if we use a window size of 10 seconds and slide size of 5 seconds, the sliding window will hold exchange rate data for 10 seconds at a time and slide over the stream, adding new exchange rate data to the buffer every 5 seconds.
+
+# Real-Time Cryptocurrency Price Plotting
+This is a simple Python script that fetches the current price of Ethereum in Bitcoin from the Binance API and plots it in real-time using Matplotlib. The script uses the requests library to make API requests and matplotlib for plotting. The plot is updated every 10 seconds and shows the price data for the past 10 minutes.
+
+To use this script, you'll need to replace the X-RapidAPI-Key header with your own RapidAPI key.
+Here's a YouTube tutorial that demonstrates how to run the script: https://youtu.be/cA_7WkHUeCQ
